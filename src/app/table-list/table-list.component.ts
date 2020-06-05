@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Administrateur } from 'app/profils/models/administrateur.model';
+import { ProfilService } from 'app/profils/services/profil.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-table-list',
@@ -7,7 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableListComponent implements OnInit {
 
-  constructor() { }
+
+  administrateurs: Administrateur [] = [];
+  
+  constructor(private administrateurService: ProfilService, private toastr: ToastrService) {
+
+    
+
+    administrateurService.getAdministrateurs().subscribe(res => {
+      console.log(res);
+      this.administrateurs = res;
+    }, err => {
+      console.log(err);
+  
+  
+    });
+   }
 
   ngOnInit() {
   }

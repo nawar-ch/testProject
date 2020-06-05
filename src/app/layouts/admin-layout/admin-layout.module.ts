@@ -17,6 +17,10 @@ import {MatRippleModule} from '@angular/material/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
+import { AdministrateurComponent } from 'app/profils/administrateur/administrateur.component';
+import { ProfilsModule } from 'app/profils/profils.module';
+import { FormationModule } from 'app/formation/formation.module';
+
 
 @NgModule({
   imports: [
@@ -30,6 +34,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
+    FormationModule,
+    ProfilsModule
   ],
   declarations: [
     DashboardComponent,
@@ -40,6 +46,7 @@ import {MatSelectModule} from '@angular/material/select';
     MapsComponent,
     NotificationsComponent,
     UpgradeComponent,
+    //AdministrateurComponent,
   ]
 })
 

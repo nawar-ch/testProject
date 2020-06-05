@@ -42,6 +42,8 @@ export class DashboardComponent implements OnInit {
 
       seq = 0;
   };
+
+
   startAnimationForBarChart(chart){
       let seq2: any, delays2: any, durations2: any;
 

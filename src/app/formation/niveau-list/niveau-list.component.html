@@ -1,0 +1,40 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content"   >
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> Liste Niveaux</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                    Code
+                </th>
+                <th>
+                    Designation
+                </th>
+                <th></th>
+                <th></th>
+              </thead>
+              <tbody *ngFor="let niveau of niveaux">
+                <tr>
+                  <td>
+                    {{niveau.code}}
+                  </td>
+                  <td>
+                      {{niveau.designation}}
+                  </td>  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
