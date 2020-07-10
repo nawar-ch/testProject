@@ -1,0 +1,65 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content"   >
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+
+        <div class="card-header">
+          <h4 class="card-title"> Liste Cours</h4>
+        </div>
+        <div class="card-body">
+  <!--        <form [formGroup]="searchByNiveauForm" (ngSubmit)="getNiveaux()">
+            <label>Favorite car</label>
+            <select [(ngModel)]="designation" [value]="designation" formControlName="designation" name="designation" id="niveaux"  class="form-control">
+              <option disabled value="" selected>--Please choose an option--</option>
+              <option *ngFor="let niveau of niveaux" [value]="niveau.designation">
+                {{niveau.designation}}
+              </option>
+            </select>
+            <button name="submit" id="submit"  type="submit" class="btn btn-warning btn-lg" style="width: 470px">Rechercher</button>
+        </form>
+      -->
+      <div class="input-group no-border" style="margin-bottom: 2em">
+
+      
+
+
+        <div class="input-group-append">
+            <div class="input-group-text">
+            <i class="now-ui-icons ui-1_zoom-bold"></i>
+            </div>
+        </div>
+    </div>
+
+          <div class="table-responsive">
+            <table class="table">
+
+              <thead class=" text-primary">
+
+                <th>Intitulé du cours</th>
+                <th>Niveau</th>
+                <th>Module</th>
+                <th>Action</th>
+
+
+              </thead>
+
+              <tbody *ngFor="let cour of cours">
+                <tr>
+                  <td>{{cour.titre}} <br>Created By : &nbsp;{{cour.name}}</td>
+                 
+
+                 <td><li>{{cour.niveau_designation}}</li> </td>
+                 <td><li>{{cour.module_designation}}</li> </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

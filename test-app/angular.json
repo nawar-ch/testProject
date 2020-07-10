@@ -118,6 +118,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-app"
+    }
+  },
+  "defaultProject": "test-app",
+  "cli": {
+    "analytics": "a71852ae-de89-4b39-a462-34cc50db36fc"
+  }
 }
